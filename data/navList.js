@@ -17,7 +17,7 @@ export const navList = [
     {
         id: 4,
         label: "Faq",
-        href: "/Faq"
+        href: "/faq"
     },
     {
         id: 5,

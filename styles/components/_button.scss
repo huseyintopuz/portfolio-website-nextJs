@@ -1,0 +1,15 @@
+@use '/styles/custom' as *;
+@use '/styles/components/mixins' as *;
+
+.btn-default {
+    padding: 0.5rem;
+    background: $white;
+    border-radius: 1rem !important;
+    font-size: 1rem;
+    font-weight: 600;
+
+    // svg {
+    //     color: blue;
+    //     margin-left: 1rem;
+    // }
+}

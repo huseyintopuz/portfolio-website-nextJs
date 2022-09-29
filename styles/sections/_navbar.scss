@@ -5,9 +5,16 @@
     @include gradient;
 
     width: 100%;
-
+    .logo {
+        img {
+            border-radius: 50%;
+        }        
+    }
     .logo-name {
-        margin-left: 5px;
+        margin-left: 2.5rem;
+        color: $white !important;
+        font-weight: 600;
+        font-size: 1.1rem;
 
         @include media-breakpoint-down(sm) {
             display: none;
@@ -15,10 +22,12 @@
     }
 
     .collapse {
-        @include media-breakpoint-down(lg) {
-            &:not(.show) {
-                display: block;
-            }
+        a {
+            color: white !important;
+            font-weight: 600;
+            font-size: 1.1rem;
         }
     }
+
+    
 }
