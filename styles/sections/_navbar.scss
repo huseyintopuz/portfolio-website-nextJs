@@ -1,5 +1,24 @@
-@use '../custom';
+@use '/styles/custom' as *;
+@use '/styles/components/mixins' as *;
 
 .navbar {
-    background: $primary;
+    @include gradient;
+
+    width: 100%;
+
+    .logo-name {
+        margin-left: 5px;
+
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+    }
+
+    .collapse {
+        @include media-breakpoint-down(lg) {
+            &:not(.show) {
+                display: block;
+            }
+        }
+    }
 }
